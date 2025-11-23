@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Team Showcase</title>
+    <meta name="description" content="We Create. We Build. We Innovate." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/J6Md7C2Vb9e1bQd+N5q9ctG3v4P5t5y1v0Hk1tq1H8y4M0g8DqzvJt0y1t/7+0Q3h1m2O0Qw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header id="hero" class="section hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+      <source src="assets/hero.mp4" type="video/mp4" />
+      <!-- Add a .webm source as needed -->
+    </video>
+        <div class="overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="headline">We Create. We Build. We Innovate.</h1>
+            <p class="subheadline">نوثق لحظات نجاح فريقنا في طريقنا للمعرض.</p>
+            <a href="#video" class="btn cta" id="watchVideoBtn">Watch Video</a>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <section id="video" class="section video-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Team Highlights</h2>
+            <div class="video-wrapper" data-aos="fade-up" data-aos-delay="150">
+                <video controls preload="metadata" poster="assets/video-poster.jpg">
+          <source src="assets/team-highlights.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Gallery</h2>
+            <div class="grid" data-aos="fade-up" data-aos-delay="150">
+                <a href="assets/gallery1.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery1-thumb.jpg" alt="Gallery item 1" />
+                </a>
+                <a href="assets/gallery2.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery2-thumb.jpg" alt="Gallery item 2" />
+                </a>
+                <a href="assets/gallery3.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery3-thumb.jpg" alt="Gallery item 3" />
+                </a>
+                <a href="assets/gallery4.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery4-thumb.jpg" alt="Gallery item 4" />
+                </a>
+                <a href="assets/gallery5.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery5-thumb.jpg" alt="Gallery item 5" />
+                </a>
+                <a href="assets/gallery6.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery6-thumb.jpg" alt="Gallery item 6" />
+                </a>
+                <a href="assets/gallery7.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery7-thumb.jpg" alt="Gallery item 7" />
+                </a>
+                <a href="assets/gallery8.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery8-thumb.jpg" alt="Gallery item 8" />
+                </a>
+                <a href="assets/gallery9.jpg" class="grid-item" data-lightbox>
+                    <img src="assets/gallery9-thumb.jpg" alt="Gallery item 9" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+            <button class="lightbox-close" aria-label="Close preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+            <img id="lightboxImage" src="" alt="Preview" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">About Our Team</h2>
+            <p class="about-text" data-aos="fade-up" data-aos-delay="150">
+                Our team thrives on collaboration and continuous improvement. We combine creativity, engineering, and dedication to build impactful solutions as we prepare for the exhibition. Every sprint strengthens our bond and sharpens our craft.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo" aria-label="Team Logo">
+                <!-- Logo Placeholder -->
+                <div class="logo-mark">T</div>
+                <span class="logo-text">Team</span>
+            </div>
+            <div class="socials">
+                <a href="" aria-label="Twitter" class="social-link">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="copy">© <span id="year"></span> Logic Ciruit Design. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
